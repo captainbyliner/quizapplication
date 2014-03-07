@@ -1,7 +1,7 @@
 
 
 var questions = [{
-	text: 'How many majors did Jack Nicklaus win?',
+	text: 'How many majors did Tiger Woods win?',
 	answers: ['18 Majors', '14 Majors', '19 Majors', '16 Majors'],
 	correctAnswer: 0
 },{
