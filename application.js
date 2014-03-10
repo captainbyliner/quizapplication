@@ -4,20 +4,20 @@ var questions = [{
 	text: 'How many majors did Jack Nicklaus win?',
 	answers: ['18 Majors', '14 Majors', '19 Majors', '16 Majors'],
 	style: {backgroundColor:"blue"},
+	hole: "Hole #1: A 444-yard Par 4",
 	correctAnswer: 0
-	hole: "Hole #1: A 444-yard Par 4"
 },{
 	text: 'What is the highest recorded Par 4 score in a PGA Tour event?',
 	answers: ['12', '16', '15', '18'],
 	style: {backgroundColor:"magenta"},
+	hole: "Hole #2: A 150-yard Par 3",
 	correctAnswer:1
-	hole: "Hole #2: A 150-yard Par 3"
 },{
 	text: 'Who has won the most British Open titles?',
 	answers: ['Tiger Woods', 'Harry Vardon', 'Tom Watson', 'Old Tom Morris'],
 	style: {backgroundColor:"orange"},
+	hole: "Hole #3: A 417-yard Par 5",
 	correctAnswer:1
-	hole: "Hole #3: A 417-yard Par 5"
 },{
 	text: 'Who said "The only thing a golfer needs is more sunlight?"',
 	answers: ['Raymond Floyd', 'Tom Watson', 'Bagger Vance', 'Ben Hogan'],

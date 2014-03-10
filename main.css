@@ -143,8 +143,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 #answerWrapper {
 	width:500px;
 	height:200px;
-	background-color:blue;
-	opacity:1;
+	background-color:black;
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:50px;
@@ -165,8 +164,6 @@ line-height:50px;
 	 text-align: center;
 	 height:39px;
 	 width:600px;
-	 background-color:black;
-
 }
 
 #questionWrapper:hover {
@@ -182,12 +179,8 @@ line-height:50px;
 	font-weight:bold;
 	color:black;
 	text-align:center;
-	background-color:silver;
 }
 
-#questionDeck:hover {
-	background-color:white;
-}
 
 #addAnswer {
 	width:100px;
