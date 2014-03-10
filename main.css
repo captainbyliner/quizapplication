@@ -143,7 +143,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 #answerWrapper {
 	width:500px;
 	height:200px;
-	background-color:black;
+	background-color:blue;
+	opacity:1;
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:50px;
@@ -156,14 +157,16 @@ float:left;
 line-height:50px;
 }
 
-#holeWrapper{
+#questionWrapper{
 	 font-size:22px;
-	 font-family: cursive;
+	 font-family: sans-serif;
 	 font-weight: bold;
 	 color:black;
 	 text-align: center;
 	 height:39px;
 	 width:600px;
+	 background-color:black;
+
 }
 
 #questionWrapper:hover {
@@ -175,12 +178,16 @@ line-height:50px;
 	height:100px;
 	width:600px;
 	font-size:44px;
-	font-family:cursive;
+	font-family:serif;
 	font-weight:bold;
 	color:black;
 	text-align:center;
+	background-color:silver;
 }
 
+#questionDeck:hover {
+	background-color:white;
+}
 
 #addAnswer {
 	width:100px;
