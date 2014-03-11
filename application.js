@@ -32,6 +32,8 @@ var questions = [{
 	correctAnswer:2
 }];
 
+var correctAnswers
+
 var questionKey = 0;
 
 function displayQuestion(key) {
@@ -72,27 +74,39 @@ $(document).ready(function() {
 
    		var question = questions[questionKey];
 
-   		if (selectedAnswer == undefined) {
-   			console.log("choose a number")
-   		}
+   		question.userAnswer = selectedAnswer;
 
+   		if($('input:radio:checked').length > 0) {
+
+   		} else {
+   			alert("Please Answer The Question");
+   		}
 
  		if (selectedAnswer == questions.correctAnswer) {
  			console.log("You are correct");
+ 			$("#rightWrong").show();
+ 			$("#rightWrong").text("Correct");
+ 			$("#rightWrong").css("backgroundColor", "green");
+ 			correctAnswers++
  		} else {
  			console.log("Nope, you are wrong");
  		}
 
  		questionKey++;
-		if (questionKey < 0) {
-			questionKey = 0;
-		}
+ 		if (questionKey >(questions.length -1)) {
+ 				questionKey = (questions.length -1);
+ 				alert("You've finished the quiz");
+ 		} else {
+ 			displayQuestion(questionKey)
+ 		}
 
-		displayQuestion(questionKey);
-   
     });    
 
  });
+
+
+
+
 
 
     
