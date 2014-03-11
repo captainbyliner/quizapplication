@@ -2,7 +2,7 @@
 
 var questions = [{
 	text: 'How many majors did Jack Nicklaus win?',
-	answers: ['18 Majors', '14 Majors', '19 Majors', '16 Majors'],
+	answers: ['18 Majors', '14 Majors', '19 Majors', '17 Majors'],
 	style: {backgroundColor:"green"},
 	holeNumber: 'Hole #1: A short dog leg to the right, Par 4',
 	correctAnswer: 0
