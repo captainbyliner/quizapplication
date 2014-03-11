@@ -27,7 +27,7 @@ var questions = [{
 },{
 	text: 'What is the maximum number of clubs a golfer can carry?',
 	answers:['12', '15', '14', '16'],
-	style:{backgroundColor:"yellow"},
+	style:{backgroundColor:"bisque"},
 	holeNumber: 'Hole #5: A reachable Par 5 if you have no fear',
 	correctAnswer:2
 }];
