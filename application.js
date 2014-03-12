@@ -32,9 +32,10 @@ var questions = [{
 	correctAnswer:2
 }];
 
-var correctAnswers
 
 var questionKey = 0;
+
+var correctAnswers = 0;
 
 function displayQuestion(key) {
 
@@ -76,13 +77,13 @@ $(document).ready(function() {
 
    		question.userAnswer = selectedAnswer;
 
-   		if($('input:radio:checked').length > 0) {
+   		if(selectedAnswer == undefined) {
+   			alert("Please answer the question!");
+   			return false;
 
-   		} else {
-   			alert("Please Answer The Question");
    		}
 
- 		if (selectedAnswer == questions.correctAnswer) {
+ 		if (selectedAnswer == question.correctAnswer) {
  			console.log("You are correct");
  			$("#rightWrong").show();
  			$("#rightWrong").text("Correct");
