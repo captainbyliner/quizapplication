@@ -106,6 +106,8 @@ $(document).ready(function() {
 
  		}
 
+ 		console.log(correctAnswers);
+
 
  		questionKey++;
  		if (questionKey >(questions.length -1)) {
@@ -115,6 +117,12 @@ $(document).ready(function() {
  			displayQuestion(questionKey)
  		}
 
+ 	});
+ 		
+	$("#answers").on('click', 'li', function() {
+		$(this).find("input").prop('checked', true);
+		console.log("Hello");
+ 	
     });    
 
  });
