@@ -211,18 +211,23 @@ color:black;
 }
 
 #rightWrong {
-	width:200px;
-	height:200px;
-	border-radius:100px;	
-	background-color:white;
+	width:600px;
+	height:100px;	
+	display:none;
 	margin-left:auto;
 	margin-right:auto;
 	font-size:22px;
+	font-family:serif;
 	text-align:center;
-	vertical-align: middle;
-	line-height:200px;
-	margin-top:50px;
-	display:none;
+	margin-top:20px;
 	color:black;
+	max-height: 100px;
+	text-align: left;
 }
 
+#guesses {
+	height:50px;
+	width:200px;
+	font-size:14px;
+	line-height:50px;
+}
