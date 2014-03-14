@@ -111,7 +111,8 @@ $(document).ready(function() {
  		questionKey++;
  		if (questionKey >(questions.length -1)) {
  				questionKey = (questions.length -1);
- 				alert("You've finished the quiz");
+ 				alert('Congratulations, you got' + ' ' + correctAnswers + ' ' + 'out of 5');
+ 				
  		} else {
  			displayQuestion(questionKey)
  		}
