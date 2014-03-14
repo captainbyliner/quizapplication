@@ -88,19 +88,18 @@ $(document).ready(function() {
    		question.userAnswer = selectedAnswer;
 
    		if(selectedAnswer == undefined) {
-   			alert("Please answer the question!");
+   			$("#warning").show().delay(500).fadeOut();
    			return false;
-
    		}
 
  		if (selectedAnswer == question.correctAnswer) {
  			console.log("You are correct");
- 			$("#rightWrong").show();
+ 			$("#rightWrong").show().delay(5000).fadeOut();
  			$("#rightWrong").text(question.right);
  			$("#rightWrong").css("backgroundColor", "green");
  			correctAnswers++
  		} else {
- 			$("#rightWrong").show();
+ 			$("#rightWrong").show().delay(5000).fadeOut();
  			$("#rightWrong").text(question.wrong);
  			$("#rightWrong").css("backgroundColor", "red");
 
@@ -121,9 +120,12 @@ $(document).ready(function() {
  		
 	$("#answers").on('click', 'li', function() {
 		$(this).find("input").prop('checked', true);
-		console.log("Hello");
- 	
+		
     });    
+
+
+
+
 
  });
 

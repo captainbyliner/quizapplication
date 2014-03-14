@@ -137,6 +137,21 @@ color:yellow;
 	background-color:yellow;
 }
 
+#warning {
+	background-color:red;
+	width:200px;
+	height:200px;
+	border-radius:100px;
+	color:black;
+	font-size:22px;
+	float:right;
+	margin-top:-200px;
+	line-height:200px;
+	vertical-align: middle;
+	text-align: center;
+	display:none;
+}
+
 #answerWrapper {
 	width:500px;
 	height:200px;
@@ -152,10 +167,12 @@ line-height:50px;
 color:black;
 }
 
+
 #answers:hover {
 	background-color:black;
 	opacity:.9;
 	color:white;
+	cursor: pointer;
 }
 
 
