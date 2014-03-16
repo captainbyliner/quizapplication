@@ -134,7 +134,80 @@ color:yellow;
 	margin-left:auto;
 	margin-top:100px;
 	color:white;
-	background-color:yellow;
+}
+
+.introPanel {
+	width:600px;
+	height:400px;
+	opacity:.9;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:100px;
+	color:white;
+	background-color:black;
+	opacity:.9;
+}
+
+#introText {
+	width:600px;
+	height:100px;
+	font-family:serif;
+	font-weight: bold;
+	font-size:60px;
+	text-align: center;
+	color:white;
+}
+
+#introText:hover {
+	background-color:white;
+	color:black;
+}
+
+#initGame {
+	width:100px;
+	height:100px;
+	border-radius:50px;	
+	background-color:green;
+	color:black;
+	font-family: serif;
+	font-weight: bold;
+	font-size:22px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:100px;
+	line-height:100px;
+	vertical-align: middle;
+	text-align: center;
+
+}
+
+#initGame:hover {
+	color:white;
+}
+
+.conclusionPanel {
+	width:600px;
+	height:400px;
+	opacity:.9;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:100px;
+	color:white;
+	background-color:ForestGreen;
+	opacity:.9;
+	display:none;
+}
+
+#conclusionText {
+	width:500px;
+	line-height: 50px;
+	font-family: serif;
+	font-weight:bold;
+	font-size:44px;
+	color:black;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:80px; 
 }
 
 #warning {
@@ -242,9 +315,23 @@ color:black;
 	text-align: left;
 }
 
-#guesses {
-	height:50px;
-	width:200px;
-	font-size:14px;
-	line-height:50px;
+#thanks {
+	width:100px;
+	height:100px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	border-radius:50px;	
+	background-color:white;
+	font-size:22px;
+	line-height:100px;
+	vertical-align: middle;
+	text-align: center;
+	color:black;
 }
+
+#thanks:hover {
+	background-color:black;
+	color:red;
+}
+
