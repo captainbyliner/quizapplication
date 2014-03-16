@@ -292,7 +292,7 @@ color:black;
 	margin-top:-150px;
 	float:right;
 	font-size:22px;
-	
+	display:none;
 }
 
 #addAnswer:hover {

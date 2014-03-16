@@ -94,6 +94,8 @@ function displayQuestion(key) {
 
 	$("#questionWrapper").text(question.holeNumber);
 
+	$("#addAnswer").show();
+
 	$("#answers").empty();
 
 	for (var answerKey = 0, totalAnswers = question.answers.length;
