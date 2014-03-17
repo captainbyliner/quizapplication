@@ -1,4 +1,3 @@
-
 var questions = [{
 	text: 'How many majors did Jack Nicklaus win?',
 	answers: ['18 Majors', '14 Majors', '19 Majors', '17 Majors'],
@@ -48,7 +47,7 @@ var questions = [{
 	wrong:'Wrong: Sam Snead was awarded the first Green Jacket. The historic blazer had been the Augusta uniform for more than 70 years',
 	correctAnswer:0
 },{
-	text:'Name the only player to lost The Masters twice in a playoff?',
+	text:'Name the only player to lose The Masters twice in a playoff?',
 	answers:['Johnny Miller' , 'Seve Ballesteros' , 'Greg Norman' ,'Ben Hogan'],
 	style:{backgroundColor:"Peru"},
 	holeNumber:'Hole #7: A 444-Yard Par 4, with OB down the right hand-side and bunkers on the left',
@@ -62,7 +61,7 @@ var questions = [{
 	style:{backgroundColor:"RosyBrown"},
 	holeNumber:'Hole #8: You can drive the green on the Par 4 or play it safe for an easy par',
 	right:'Correct: Byron Nelson won 18 out of 35 PGA tournaments, including 11 in a row. Arnold Palmer said the streak would never be equalled.',
-	wrong:'Correct: Byron Nelson won 18 out of 35 PGA tournaments, including 11 in a row. Arnold Palmer said the streak would never be equalled.',
+	wrong:'Wrong: Byron Nelson won 18 out of 35 PGA tournaments, including 11 in a row. Arnold Palmer said the streak would never be equalled.',
 	correctAnswer:1
 
 },{
@@ -110,6 +109,12 @@ function displayQuestion(key) {
         
 	}
 }
+ 
+
+var text = [];
+
+var totalQuestions = questions.length -1;
+var percentCorrect = correctAnswers/ totalQuestions * 100 
 
 
 $(document).ready(function() {
@@ -119,6 +124,10 @@ $(document).ready(function() {
 		displayQuestion(questionKey);
 		$(".panel").show();
 	});
+
+	//$("button").click(function(){
+ // $("div").animate({left:'250px'});
+//}); 
 
    $("#addAnswer").on('click', function() {
 
@@ -146,17 +155,17 @@ $(document).ready(function() {
  			$("#rightWrong").css("backgroundColor", "red");
  		}
 
- 		console.log(correctAnswers);
-
 
  		questionKey++;
  		if (questionKey >(questions.length -1)) {
  				questionKey = (questions.length -1);
  				$(".panel").hide();
  				$(".conclusionPanel").show();
- 				$("#conclusionText").text('Nice round shooter. You scored' + ' ' + correctAnswers + ' ' + 'out of 9!');
- 				
- 		} else {
+ 				$("#conclusionText").text("Nice round. You scored" + ' ' + correctAnswers + ' ' + 'out of 9.');
+ 					$("#thanks").animate({left:'250px'});
+
+ 				} 
+ 					 else {
  			displayQuestion(questionKey)
  		}
 
@@ -165,16 +174,9 @@ $(document).ready(function() {
 	$("#answers").on('click', 'li', function() {
 		$(this).find("input").prop('checked', true);
 		
-    });    
-
-$('.ball').addClass('rotate');
-
-
-
+    });   
 
  });
-
-
 
 
 
